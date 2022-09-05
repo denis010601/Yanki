@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/mobile.min.css">
+    <title>Yanki</title>
 </head>
 <body>
+    <header class="header">
+        <div class="wrapper">
+            <nav class="nav nav__wrapper">
+                <button class="burger" id="burger"></button>
+                <ul class="nav-list">
+                    <li class="mav-item"><a href="http://">new</a></li>
+                    <li class="mav-item"><a href="http://">каталог</a></li>
+                    <li class="mav-item"><a href="http://">о нас</a></li>
+                </ul>
+                <a href="#" class="logo">
+                    Yanki
+                </a>
+                <div class="lang-coin">
+                    <div class="select select--white">
+                        <div class="select__header">
+                            <span class="select__current">RU</span>
+                            <div class="select__icon">&#62;</div>
+                        </div>
+                        <div class="select__body">
+                            <div class="select__item">RU</div>
+                            <div class="select__item">EN</div>
+                        </div>
+                    </div>
+                    <div class="coin">RUB</div>
+                </div>
+                <div class="client">    
+                    <a href="#" class="client__item client__item--search"></a>
+                    <a href="#" class="client__item client__item--lk"></a>
+                    <a href="#" class="client__item client__item--like"></a>
+                    <a href="#" class="client__item client__item--basket"></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <ul class="burger__menu" id="burgerMenu">
+        <li class="burger__item">
+            <input type="text" placeholder="Введите ваш запрос" class="burger__search">
+            <div class="coin">
+                <div class="select burger__select select--grey">
+                    <div class="select__header">
+                        <span class="select__current">rub</span>
+                        <div class="select__icon">&#62;</div>
+                    </div>
+                    <div class="select__body">
+                        <div class="select__item">rub</div>
+                        <div class="select__item">usd</div>
+                        <div class="select__item">eur</div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="burger__item">
+            <a class="burger__item-link" href="http://">
+                <img class="burger__item-icon" src="img/lk_orange.svg" alt=""> Личный кабинет
+            </a>
+        </li>
+        <li class="burger__item">
+            <a class="burger__item-link" href="http://">
+                 new
+            </a>
+        </li>
+        <li class="burger__item">
+            <a class="burger__item-link" href="http://">
+                каталог
+            </a>
+        </li>
+        <li class="burger__item">
+            <a class="burger__item-link" href="http://">
+                 О нас
+            </a>
+        </li>
+        <li class="burger__item">
+            <a class="burger__item-link" href="http://">
+                 Условия возврата
+            </a>
+        </li>
+        <li class="burger__item">
+            <a class="burger__item-link" href="http://">
+                 контакты
+            </a>
+        </li>
+    </ul>
+    <script src="js/main.js"></script>
 </body>
 </html>
