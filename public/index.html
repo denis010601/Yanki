@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/mobile.min.css">
+    <link href="/css/mobile.min.css" rel="stylesheet">
+    <link href="/css/desktop.min.css" rel="stylesheet" media="(min-width: 1140px)">
     <title>Yanki</title>
 </head>
 <body>
@@ -13,9 +14,9 @@
             <nav class="nav nav__wrapper">
                 <button class="burger" id="burger"></button>
                 <ul class="nav-list">
-                    <li class="mav-item"><a href="http://">new</a></li>
-                    <li class="mav-item"><a href="http://">каталог</a></li>
-                    <li class="mav-item"><a href="http://">о нас</a></li>
+                    <li class="nav__item"><a class="nav__item--link" href="http://">new</a></li>
+                    <li class="nav__item"><a class="nav__item--link" href="http://">каталог</a></li>
+                    <li class="nav__item"><a class="nav__item--link" href="http://">о нас</a></li>
                 </ul>
                 <a href="#" class="logo">
                     Yanki
@@ -31,7 +32,17 @@
                             <div class="select__item">EN</div>
                         </div>
                     </div>
-                    <div class="coin">RUB</div>
+                    <div class="select select--white">
+                        <div class="select__header">
+                            <span class="select__current">RUb</span>
+                            <div class="select__icon">&#62;</div>
+                        </div>
+                        <div class="select__body">
+                            <div class="select__item">RUb</div>
+                            <div class="select__item">usd</div>
+                            <div class="select__item">eur</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="client">    
                     <a href="#" class="client__item client__item--search"></a>
