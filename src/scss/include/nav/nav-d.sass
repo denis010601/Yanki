@@ -1,12 +1,17 @@
 @media screen and (min-width: 1180px)
     .nav
-        position: static
+        position: absolute
+        top: 0
         &__wrapper
             
         &-list
             display: flex
             order: 1
             margin-left: 105px
+            transition: all 0.3s ease
+            &.is-active
+                opacity: 0
+                visibility: hidden
         &__item
             margin-left: 25px
             &:first-child

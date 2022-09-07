@@ -1,15 +1,15 @@
 .hero
-    background: linear-gradient(180deg, rgba(61, 61, 61, 0.5) 0%, rgba(61, 61, 61, 0) 100%), url('../img/bg/yanki_fon_w.webp') center center no-repeat, url('../img/bg/yanki_fon_w.webp') center top no-repeat
+    background: linear-gradient(180deg, rgba(61, 61, 61, 0.5) 0%, rgba(61, 61, 61, 0) 100%), url('../img/bg/yanki_fon_w.webp') center top no-repeat
     background-size: cover
-    width: 100vw
+    
     height: 100vh
     max-height: 667px
     display: flex
     align-items: center
     justify-content: center
     text-align: center
+    margin-bottom: 30px
     &__title
-        color: #fff
         padding-bottom: 15px
         position: relative
         margin-bottom: 15px
@@ -28,8 +28,7 @@
         color: #fff
         font-size: 14px
         position: relative
-        &:hover
-            color: #E0BEA2
+            
         &::before
             content: '>'
             position: absolute
@@ -40,3 +39,6 @@
             height: 14px
             right: -19px
             top: 0
+        &:hover
+            &::before
+                color: #E0BEA2

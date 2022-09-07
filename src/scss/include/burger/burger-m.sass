@@ -8,6 +8,7 @@
     order: 0
     left: 0
     transition: all 0.5 ease
+    cursor: pointer
     &::before
         content: ""
         position: absolute
@@ -16,7 +17,9 @@
         background: #fff
         top: 6px
         left: 0
+        transition: all 0.5 ease
     &::after
+        transition: all 0.5 ease
         content: ""
         position: absolute
         width: 18px
@@ -25,6 +28,7 @@
         bottom: 0
         left: 0
     &.is-active
+        transition: all 0.5 ease
         border: 1px solid transparent
         width: 27px
         height: 27px
@@ -57,22 +61,32 @@
             overflow: hidden
             background-color: #fff
     &__item
-        padding: 0 20px
-        height: 60px
         width: 100%
         display: flex
         justify-content: center
         align-items: center
         border-bottom: 0.3px solid #252525
+        color: #252525
+        cursor: pointer
+        &:nth-child(6)
+            display: none
+        &:hover, &:focus, &:active
+            transition: all 0.3s ease
+            color: #E0BEA2
         &:first-child
             height: 80px
         &-link
+            padding: 0 20px
+            height: 60px
             display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
             text-decoration: none
             text-transform: uppercase
             font-size: 16px
             line-height: 19px
-            color: #252525
+            color: inherit
             font-weight: 300
             white-space: nowrap
         &-icon
@@ -91,9 +105,13 @@
         background-image: url(../img/search_black.svg)
         background-repeat: no-repeat
         background-position:  93% center
+        outline: none
         &::placeholder
             font-family: "Raleway"
             color: #252525
+        &:active, &:focus
+            border: 0.3px solid #E0BEA2
+            
     &__select
         color: #252525
         margin-left: 20px

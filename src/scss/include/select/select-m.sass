@@ -1,6 +1,7 @@
 .select
     text-transform: uppercase
     font-size: 16px
+    transition: all 0.3s ease
     &--white
         color: #fff
     &--black
@@ -24,6 +25,7 @@
     &__body
         display: none
         position: absolute
+
     &__item
         border-top: 1px solid #E0BEA2
         display: flex
@@ -33,10 +35,15 @@
         width: 46px
         padding: 3px 0
         cursor: pointer
-    
+        &:hover
+            color: #E0BEA2
+            transition: all 0.3s ease
         
 
     &.is-active &__body
         display: block
+
     &.is-active &__icon
+        transition: all 0.3s ease
         transform: rotate(270deg)
+        
