@@ -1,0 +1,42 @@
+.hero
+    background: linear-gradient(180deg, rgba(61, 61, 61, 0.5) 0%, rgba(61, 61, 61, 0) 100%), url('../img/bg/yanki_fon_w.webp') center center no-repeat, url('../img/bg/yanki_fon_w.webp') center top no-repeat
+    background-size: cover
+    width: 100vw
+    height: 100vh
+    max-height: 667px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    &__title
+        color: #fff
+        padding-bottom: 15px
+        position: relative
+        margin-bottom: 15px
+        &::before
+            content: ''
+            position: absolute
+            bottom:0
+            left: 50%
+            transform: translateX(-50%)
+            width: 120px
+            height: 1px
+            background: #fff
+    &__link
+        margin-top: 15px
+        text-transform: uppercase
+        color: #fff
+        font-size: 14px
+        position: relative
+        &:hover
+            color: #E0BEA2
+        &::before
+            content: '>'
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 14px
+            height: 14px
+            right: -19px
+            top: 0
